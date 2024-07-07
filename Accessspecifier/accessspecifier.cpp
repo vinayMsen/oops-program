@@ -6,7 +6,7 @@ using namespace std;
 class house
 {
     //memeber variables
-    private :
+    protected :
     int length,breadth;
 
     //memeber functions
@@ -24,7 +24,7 @@ class house
 // separate inherited class
 class kamare : public house
 {
-   
+  
 };
  
  // other class
@@ -35,7 +35,7 @@ class kamare : public house
 
 int main()
 {
-    house h1;
+    house h1,h2;
     int t;
     for(cin>>t; t; t--)
     {
@@ -43,6 +43,7 @@ int main()
         cin>>x>>y;
         h1.setdata(x,y);
         h1.area();
+        
     }
     return 0;
 }
